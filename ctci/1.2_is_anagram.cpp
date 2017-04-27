@@ -2,7 +2,7 @@
 #include<unordered_map>
 using namespace std;
 
-bool isAnagram(const string& s1, const string& s2){
+bool IsAnagram(const string& s1, const string& s2){
   if(s1.length() != s2.length()){return false;}
 
   unordered_map<char,int> hash;
@@ -21,6 +21,6 @@ bool isAnagram(const string& s1, const string& s2){
  int main(){
     string s1 = "potato";
     string s2 = "";
-    cout << isAnagram(s1,s2);
+    cout << IsAnagram(s1,s2);
     return 0;
 }

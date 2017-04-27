@@ -2,7 +2,7 @@
 #include<unordered_map>
 using namespace std;
 
-bool isUnique(const string& s){
+bool IsUnique(const string& s){
   if(s.length() > 128) {return false;}
 
   unordered_map<char,int> hash;
@@ -14,6 +14,6 @@ bool isUnique(const string& s){
 
  int main(){
     string s = "qwertyuio";
-    cout << isUnique(s);
+    cout << IsUnique(s);
     return 0;
 }
